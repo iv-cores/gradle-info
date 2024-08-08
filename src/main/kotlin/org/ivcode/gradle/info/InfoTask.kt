@@ -1,6 +1,6 @@
 package org.ivcode.gradle.info
 
-class InfoTask : org.gradle.api.DefaultTask() {
+open class InfoTask : org.gradle.api.DefaultTask() {
 
     @org.gradle.api.tasks.TaskAction
     fun writeProperties() = with(project){

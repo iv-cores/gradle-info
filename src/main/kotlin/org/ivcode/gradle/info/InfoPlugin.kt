@@ -6,7 +6,7 @@ import org.gradle.api.Project
 class InfoPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         project.extensions.create("info", InfoExtension::class.java)
-        project.tasks.register("writeProperties", InfoTask::class.java)
+        project.tasks.register("info", InfoTask::class.java)
 
         project.afterEvaluate {
             val extension = project.extensions.getByType(InfoExtension::class.java)
